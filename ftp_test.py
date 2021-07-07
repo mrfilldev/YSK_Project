@@ -32,7 +32,7 @@ shutil.rmtree('/home/pi/Documents/done_zip')
 with zipfile.ZipFile('FTP_YSK', 'r') as zip_ref:
     zip_ref.extractall('/home/pi/Documents/done_zip')
 
-list_dir = os.listdir('/home/pi/Documents/done_zip')
-with open(r"/home/pi/Documents/list_of_music.txt", "w") as file:
+list_dir = os.listdir('/home/pi/Projects/YSK_Project/done_zip')
+with open(r"/home/pi/Projects/YSK_Project/list_of_music.txt", "w") as file:
     for line in list_dir:
         file.write(line + '\n')
